@@ -107,22 +107,16 @@ export const ModalImageViewer: React.FC<ModalImageViewerProps> = ({
           </button>
         </div>
 
-        {/* Caption & Index */}
-        <div className="text-center px-1">
-          <div className="text-[10px] font-mono text-pink-600 tracking-wider uppercase mb-0.5">
-            {currentIndex + 1} of {memories.length}
-          </div>
-          <h3 className="font-serif text-lg sm:text-xl font-bold text-neutral-900 mb-1">
-            {memory.title}
-          </h3>
-          <p className="text-xs text-neutral-600 leading-relaxed font-sans">
-            {memory.caption}
-          </p>
+        {/* Photo Index Counter */}
+        <div className="text-center my-1">
+          <span className="text-[11px] font-mono text-pink-600 tracking-widest uppercase font-bold">
+            {currentIndex + 1} OF {memories.length}
+          </span>
         </div>
 
         {/* Decorative footer */}
-        <div className="mt-3 pt-2.5 border-t border-neutral-200/80 flex items-center justify-between text-xs text-pink-600 font-medium">
-          <span className="font-script text-base text-pink-700">Memory Keepsake</span>
+        <div className="mt-2 pt-2 border-t border-neutral-200/80 flex items-center justify-between text-xs text-pink-600 font-medium">
+          <span className="font-script text-base text-pink-700">Memory Keepsake ♡</span>
           <button
             onClick={() => {
               soundManager.playChime();
