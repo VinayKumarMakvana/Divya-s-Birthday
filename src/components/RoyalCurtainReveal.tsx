@@ -274,7 +274,7 @@ export const RoyalCurtainReveal: React.FC<RoyalCurtainProps> = ({ onRevealed }) 
       {/* 6. CENTER STAGE CARD (Sitting proudly on the curtains before reveal) */}
       <div
         ref={centerCardRef}
-        className="relative z-40 w-full max-w-[340px] sm:max-w-[365px] px-3 py-4 flex flex-col items-center text-center will-change-transform"
+        className="relative z-40 w-full max-w-[340px] sm:max-w-[365px] px-3 py-4 flex flex-col items-center text-center"
       >
         {/* Royal Frosted Glass Plaque */}
         <div className="w-full rounded-3xl bg-gradient-to-b from-[#180424]/90 via-[#270836]/90 to-[#190426]/90 backdrop-blur-md border-2 border-amber-300/60 p-4 sm:p-5 shadow-[0_20px_50px_rgba(0,0,0,0.85),0_0_35px_rgba(251,191,36,0.3)] flex flex-col items-center">
@@ -296,25 +296,24 @@ export const RoyalCurtainReveal: React.FC<RoyalCurtainProps> = ({ onRevealed }) 
           </div>
 
           {/* DIVYA'S HERO IMAGE (~35% UI Area with Ornate Royal Gold Arch Frame) */}
-          <div className="relative my-2 w-[210px] sm:w-[235px] h-[260px] sm:h-[285px] rounded-t-full rounded-b-2xl border-4 border-amber-300/90 shadow-[0_12px_35px_rgba(0,0,0,0.8),0_0_25px_rgba(251,191,36,0.45)] overflow-hidden group select-none">
-            {/* Ambient Gold Glow Halo behind image */}
-            <div className="absolute inset-0 rounded-t-full bg-amber-400/10 pointer-events-none" />
-
-            {/* Divya's Image */}
+          <div className="relative my-2 w-[215px] sm:w-[240px] h-[265px] sm:h-[295px] rounded-t-full rounded-b-2xl border-4 border-amber-300 shadow-[0_12px_35px_rgba(0,0,0,0.8),0_0_25px_rgba(251,191,36,0.45)] overflow-hidden select-none bg-[#1a0524]">
+            {/* Divya's Real Photo Perfectly Adjusted to Frame */}
             <img
               src={curtainIntro.heroImage}
               alt={birthdayData.recipientName}
-              className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              loading="eager"
+              decoding="sync"
+              className="w-full h-full object-cover object-center"
+              style={{
+                imageRendering: '-webkit-optimize-contrast',
+              }}
             />
 
-            {/* Inner Vignette for luxury depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20 pointer-events-none" />
-
             {/* Corner Floral Ornaments on the Frame */}
-            <span className="absolute top-2 left-3 text-lg filter drop-shadow">🌸</span>
-            <span className="absolute top-2 right-3 text-lg filter drop-shadow">🌸</span>
-            <span className="absolute bottom-2 left-2 text-sm filter drop-shadow">✨</span>
-            <span className="absolute bottom-2 right-2 text-sm filter drop-shadow">✨</span>
+            <span className="absolute top-3 left-4 text-base filter drop-shadow select-none">🌸</span>
+            <span className="absolute top-3 right-4 text-base filter drop-shadow select-none">🌸</span>
+            <span className="absolute bottom-2 left-2 text-sm filter drop-shadow select-none">✨</span>
+            <span className="absolute bottom-2 right-2 text-sm filter drop-shadow select-none">✨</span>
           </div>
 
           {/* Name & Wishes: "Happy Birthday, Divya! ♡" */}
