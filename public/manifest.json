@@ -1,0 +1,17 @@
+{
+  "short_name": "Divya Birthday",
+  "name": "Happy Birthday Divya ♡",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#160826",
+  "theme_color": "#160826",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+

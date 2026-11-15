@@ -1,0 +1,6 @@
+﻿=== BIRTHDAY MUSIC SETUP ===
+Place your chosen MP3 file at:
+public/audio/birthday-music.mp3
+
+If this file is not found, the website gracefully switches to an elegant 'Music Unavailable' state
+or falls back to the embedded soothing ambient track without breaking or faking playback.
