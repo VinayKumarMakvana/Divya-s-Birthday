@@ -134,27 +134,27 @@ export const Chapter04Letter: React.FC<ChapterProps> = ({ onNext }) => {
       </div>
 
       {/* VINTAGE DECKLED-EDGE PARCHMENT SCROLL CONTENT */}
-      {/* Positioned strictly inside the upper/middle printable parchment area so signature stays well above the curl */}
+      {/* Positioned comfortably inside the printable parchment area with balanced spacing */}
       <div
         ref={parchmentRef}
         onClick={onNext}
-        className="absolute top-[23%] sm:top-[24%] bottom-[26%] sm:bottom-[27%] left-1/2 -translate-x-1/2 w-[76%] max-w-[295px] sm:max-w-[330px] z-20 flex flex-col justify-between px-2 sm:px-3 py-1 select-none cursor-pointer"
+        className="absolute top-[28%] sm:top-[28.5%] left-1/2 -translate-x-1/2 w-[76%] max-w-[295px] sm:max-w-[325px] z-20 flex flex-col px-2.5 sm:px-3.5 select-none cursor-pointer"
         title="Tap to continue"
       >
-        {/* Parchment Text Container with smooth inner overflow safety */}
-        <div ref={textContainerRef} className="relative z-10 flex flex-col h-full justify-between overflow-y-auto no-scrollbar scrollbar-none pr-0.5">
+        {/* Parchment Text Container */}
+        <div ref={textContainerRef} className="relative z-10 flex flex-col max-h-[58vh] overflow-y-auto no-scrollbar scrollbar-none pr-0.5">
           {/* Top Header Block: Recipient, Birthday Greeting & Salutation */}
-          <div className="shrink-0 mb-0.5">
+          <div className="shrink-0 mb-2 sm:mb-2.5">
             {/* Header: Dear lazy Divya ♡ */}
             <h2
               ref={headerRef}
-              className="letter-line font-script text-2xl sm:text-3xl text-[#4a0e1c] font-bold tracking-wide drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] leading-tight"
+              className="letter-line font-script text-2xl sm:text-[26px] text-[#4a0e1c] font-bold tracking-wide drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)] leading-tight"
             >
               {birthdayData.chapter04.recipient}
             </h2>
 
             {/* Subheader & Salutation row */}
-            <div className="letter-line flex items-baseline justify-between mt-0.5 pb-0.5 border-b border-amber-900/20">
+            <div className="letter-line flex items-baseline justify-between mt-1 pb-1 border-b border-amber-900/25">
               <span className="font-serif italic text-[11px] sm:text-xs text-[#781835] font-bold">
                 {birthdayData.chapter04.greeting}
               </span>
@@ -164,20 +164,20 @@ export const Chapter04Letter: React.FC<ChapterProps> = ({ onNext }) => {
             </div>
           </div>
 
-          {/* Paragraphs with Sibling Teasing & Wishes */}
-          <div className="flex flex-col gap-1 sm:gap-1.5 my-auto">
+          {/* Paragraphs with Sibling Teasing & Wishes - Natural, comfortable spacing */}
+          <div className="flex flex-col gap-2.5 sm:gap-3 my-1">
             {birthdayData.chapter04.paragraphs.map((p, idx) => (
               <p
                 key={idx}
-                className="letter-line font-serif italic text-[10.5px] sm:text-[12px] text-[#2c0e17] leading-[1.32] sm:leading-relaxed font-medium"
+                className="letter-line font-serif italic text-[11px] sm:text-[12px] text-[#2c0e17] leading-relaxed font-medium"
               >
                 {p}
               </p>
             ))}
           </div>
 
-          {/* Sign-off positioned noticeably higher up, safely away from curled bottom corner */}
-          <div className="letter-line shrink-0 flex justify-end items-center gap-1.5 pt-1 mt-0.5 border-t border-amber-900/20 pr-1">
+          {/* Sign-off positioned naturally, safely above curled bottom corner */}
+          <div className="letter-line shrink-0 flex justify-end items-center gap-1.5 pt-1.5 mt-1 border-t border-amber-900/25 pr-1">
             <span className="font-script text-base sm:text-lg text-[#4a0e1c] font-bold">
               {birthdayData.chapter04.signOff}
             </span>
