@@ -342,7 +342,7 @@ export const RoyalCurtainReveal: React.FC<RoyalCurtainProps> = ({ onRevealed }) 
 
           {/* Subtle Helper Hint */}
           <p className="font-sans text-[11px] sm:text-xs text-pink-100/90 font-medium mt-2 tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-            (Parda kholne ke liye tap karein ♡)
+            (Tap here to open the curtain ♡)
           </p>
         </div>
       </div>
