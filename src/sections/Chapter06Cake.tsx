@@ -70,7 +70,7 @@ export const Chapter06Cake: React.FC<ChapterProps> = ({ onWishMade }) => {
     // 6. Smoothly glide to Chapter 07 after celebration vibe settles
     setTimeout(() => {
       onWishMade();
-    }, 850);
+    }, 1350);
   };
 
   return (
@@ -214,7 +214,7 @@ export const Chapter06Cake: React.FC<ChapterProps> = ({ onWishMade }) => {
         onClick={handleBlowCandles}
         className="relative z-20 w-full flex flex-col items-center pb-5 cursor-pointer select-none"
       >
-        <p className="font-serif italic text-sm text-pink-200/95 tracking-wide text-center leading-relaxed drop-shadow">
+        <p className="font-serif italic text-sm text-pink-100 font-medium tracking-wide text-center leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]">
           Tap the candles to<br />make a wish ♡
         </p>
 

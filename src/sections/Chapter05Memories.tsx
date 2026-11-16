@@ -54,7 +54,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top 65%',
+          start: 'top 75%',
           toggleActions: 'play none none reverse',
         },
       });
@@ -217,7 +217,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
           </div>
 
           <div className="mt-1.5 text-center">
-            <span className="font-script text-xs text-neutral-600 block">Sweet childhood ♡</span>
+            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Sweet childhood ♡</span>
           </div>
         </div>
 
@@ -242,7 +242,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
           </div>
 
           <div className="mt-1.5 text-center">
-            <span className="font-script text-xs text-neutral-600 block">Always by your side ♡</span>
+            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Always by your side ♡</span>
           </div>
         </div>
 
@@ -267,7 +267,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
           </div>
 
           <div className="mt-1.5 text-center">
-            <span className="font-script text-xs text-neutral-600 block">Endless smiles ✨</span>
+            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Endless smiles ✨</span>
           </div>
         </div>
 
@@ -282,7 +282,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
         onClick={onNext}
         className="relative z-20 flex flex-col items-center pb-4 cursor-pointer opacity-90 hover:opacity-100 transition-opacity select-none text-center"
       >
-        <p className="font-serif italic text-sm text-pink-200/90 tracking-wide mb-1.5 leading-relaxed">
+        <p className="font-serif italic text-sm text-pink-100 font-medium tracking-wide mb-1.5 leading-relaxed drop-shadow-[0_1px_5px_rgba(0,0,0,0.9)]">
           A collection of our<br />favourite moments together ♡
         </p>
         <ChevronDown className="w-5 h-5 text-pink-200 animate-bounce" />

@@ -256,10 +256,10 @@ export const Chapter02Music: React.FC<ChapterProps> = ({ onNext }) => {
 
         {/* Text Section Matching Reference */}
         <div ref={textRef} className="text-center px-4 mb-4">
-          <h2 className="font-script text-3xl sm:text-4xl text-pink-100 drop-shadow-[0_0_20px_rgba(244,114,182,0.8)] leading-tight mb-2">
+          <h2 className="font-script text-3xl sm:text-4xl text-pink-100 drop-shadow-[0_0_20px_rgba(244,114,182,0.8)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] leading-tight mb-2">
             Let's Add Some Music<br />To This Special Journey ♡
           </h2>
-          <p className="font-serif italic text-xs sm:text-sm text-pink-200/90 font-light leading-relaxed max-w-xs mx-auto drop-shadow">
+          <p className="font-serif italic text-xs sm:text-sm text-pink-100 font-medium leading-relaxed max-w-xs mx-auto drop-shadow-[0_1px_5px_rgba(0,0,0,0.85)]">
             A soft melody to 🎶 make your birthday experience even more magical😁
           </p>
         </div>

@@ -118,13 +118,13 @@ export const Chapter01Entrance: React.FC<ChapterProps> = ({ onNext }) => {
         ✨
       </div>
 
-      {/* Delicate Golden Cathedral Arch Frame (Allows Breathtaking 9:16 Artwork to Shine Through) */}
+      {/* Delicate Golden Cathedral Arch Frame */}
       <div
         ref={archRef}
-        className="relative z-10 w-[92%] max-w-[380px] rounded-t-[190px] rounded-b-[32px] border border-amber-300/45 bg-[#140420]/35 backdrop-blur-[1.5px] shadow-[0_0_50px_rgba(0,0,0,0.5),inset_0_0_30px_rgba(244,114,182,0.12)] px-5 pt-7 pb-6 flex flex-col items-center text-center my-auto will-change-transform"
+        className="relative z-10 w-[92%] max-w-[380px] rounded-t-[190px] rounded-b-[32px] border-2 border-amber-300/55 bg-[#140420]/60 backdrop-blur-md shadow-[0_0_50px_rgba(0,0,0,0.65),inset_0_0_30px_rgba(244,114,182,0.18)] px-5 pt-7 pb-6 flex flex-col items-center text-center my-auto will-change-transform"
       >
         {/* Inner Delicate Arch Accent Line */}
-        <div className="absolute inset-1.5 rounded-t-[182px] rounded-b-[26px] border border-pink-300/30 pointer-events-none" />
+        <div className="absolute inset-1.5 rounded-t-[182px] rounded-b-[26px] border border-pink-300/35 pointer-events-none" />
 
         {/* Hanging Fairy Lights Garland inside the arch */}
         <div
@@ -143,25 +143,25 @@ export const Chapter01Entrance: React.FC<ChapterProps> = ({ onNext }) => {
         </div>
 
         {/* Top Note matching reference */}
-        <p className="font-serif italic text-sm sm:text-base text-pink-100/95 tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] mb-2">
+        <p className="font-serif italic text-sm sm:text-base text-pink-100 tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] mb-2 font-medium">
           A Little World<br />Made Just For You ♡
         </p>
 
         {/* Grand Birthday Calligraphy Heading matching reference */}
         <div ref={textRef} className="my-1 space-y-0.5">
-          <h2 className="font-script text-5xl sm:text-6xl text-pink-200 drop-shadow-[0_0_25px_rgba(244,114,182,0.9)] leading-none">
+          <h2 className="font-script text-5xl sm:text-6xl text-pink-200 drop-shadow-[0_0_25px_rgba(244,114,182,0.9)] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] leading-none">
             Happy
           </h2>
-          <h2 className="font-script text-5xl sm:text-6xl text-pink-200 drop-shadow-[0_0_25px_rgba(244,114,182,0.9)] leading-tight -mt-2">
+          <h2 className="font-script text-5xl sm:text-6xl text-pink-200 drop-shadow-[0_0_25px_rgba(244,114,182,0.9)] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] leading-tight -mt-2">
             Birthday,
           </h2>
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-white drop-shadow-[0_4px_25px_rgba(255,216,117,0.8)] mt-1">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold tracking-tight text-white drop-shadow-[0_4px_25px_rgba(255,216,117,0.9)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] mt-1">
             Divya! ♡
           </h1>
         </div>
 
         {/* Supporting text matching reference */}
-        <p className="text-xs sm:text-sm text-pink-100/90 font-light leading-relaxed max-w-xs mt-3 mb-6 px-2 drop-shadow">
+        <p className="text-xs sm:text-sm text-pink-100 font-normal leading-relaxed max-w-xs mt-3 mb-6 px-2 drop-shadow-[0_1px_6px_rgba(0,0,0,0.9)]">
           Today's, someone's birthday! <br />
           Jo ye sochti he vo jyada samjhdar he 😜
         </p>

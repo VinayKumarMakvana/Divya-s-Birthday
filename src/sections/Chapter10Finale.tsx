@@ -161,7 +161,7 @@ export const Chapter10Finale: React.FC<ChapterProps> = ({ onRestart, onReplay })
       </div>
 
       {/* GLOWING NEON HEART & HIGH-CONTRAST READABLE SENTIMENTAL WORDS */}
-      <div className="relative z-20 flex flex-col items-center text-center max-w-[345px] px-4 py-3.5 my-auto select-none rounded-3xl bg-[#170322]/50 backdrop-blur-[4px] border border-pink-300/30 shadow-[0_8px_32px_rgba(0,0,0,0.5),0_0_20px_rgba(244,114,182,0.2)]">
+      <div className="relative z-20 flex flex-col items-center text-center max-w-[345px] px-4 py-3.5 my-auto select-none rounded-3xl bg-[#170322]/70 backdrop-blur-md border border-pink-300/40 shadow-[0_8px_32px_rgba(0,0,0,0.7),0_0_25px_rgba(244,114,182,0.25)]">
         {/* Pulsing Neon Outline Heart */}
         <div className="mb-2 relative animate-heartbeat">
           <Heart className="w-10 h-10 text-rose-300 fill-rose-500/40 filter drop-shadow-[0_0_16px_#f43f5e] drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" />
@@ -198,7 +198,7 @@ export const Chapter10Finale: React.FC<ChapterProps> = ({ onRestart, onReplay })
           className="relative w-full max-w-[280px] sm:max-w-[310px] rounded-xl bg-gradient-to-r from-[#faf4e8]/95 via-[#f7eedc]/95 to-[#efe2cb]/95 p-3 text-center shadow-[0_10px_25px_rgba(0,0,0,0.5),0_0_15px_rgba(255,216,117,0.3)] border border-amber-300/70 cursor-pointer group active:scale-98 transition-transform select-none"
           title="Tap to celebrate!"
         >
-          <span className="font-script text-2xl sm:text-3xl text-[#7a1c3d] font-bold block drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
+          <span className="font-script text-2xl sm:text-3xl text-[#5c102a] font-bold block drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">
             With lots of love, Your Brother ♡
           </span>
         </div>

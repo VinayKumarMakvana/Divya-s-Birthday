@@ -148,12 +148,12 @@ export const Chapter08Special: React.FC<ChapterProps> = ({ onNext }) => {
         <AnimatedButterfly size={28} color="#e879f9" />
       </div>
 
-      {/* Top Heading matching Reference */}
+      {/* Top Heading matching Reference with Crystal Clear Contrast */}
       <div ref={headerRef} className="relative z-20 pt-6 text-center select-none">
-        <h2 className="font-serif italic text-3xl sm:text-4xl text-[#5c1334] tracking-wide drop-shadow-[0_1px_8px_rgba(255,255,255,0.8)] leading-tight">
+        <h2 className="font-serif italic text-3xl sm:text-4xl text-pink-100 tracking-wide drop-shadow-[0_2px_12px_rgba(255,182,193,0.7)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)] leading-tight">
           Why You Are
         </h2>
-        <p className="font-script text-3xl sm:text-4xl text-[#9c2759] tracking-wider mt-0.5 drop-shadow-[0_1px_8px_rgba(255,255,255,0.8)]">
+        <p className="font-script text-3xl sm:text-4xl text-pink-200 tracking-wider mt-0.5 drop-shadow-[0_2px_10px_rgba(244,114,182,0.8)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.8)]">
           So Special ♡
         </p>
       </div>
@@ -185,20 +185,20 @@ export const Chapter08Special: React.FC<ChapterProps> = ({ onNext }) => {
             <div
               key={idx}
               onClick={handleCardClick}
-              className="group relative rounded-2xl bg-white/90 backdrop-blur-md p-2.5 sm:p-3 shadow-[0_6px_16px_rgba(244,114,182,0.18)] border border-pink-200/80 flex items-center gap-2.5 sm:gap-3 cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+              className="group relative rounded-2xl bg-white/95 backdrop-blur-md p-2.5 sm:p-3 shadow-[0_6px_18px_rgba(20,4,30,0.4),0_0_12px_rgba(244,114,182,0.15)] border border-pink-200/90 flex items-center gap-2.5 sm:gap-3 cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
               title="Tap to react"
             >
               {/* 3D Embossed Icon Badge */}
-              <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-gradient-to-br from-pink-100 to-amber-100 border border-pink-200/70 shadow-inner flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-xl bg-gradient-to-br from-pink-100 to-amber-100 border border-pink-200/80 shadow-inner flex items-center justify-center group-hover:scale-110 transition-transform">
                 {renderIcon()}
               </div>
 
-              {/* Text details */}
+              {/* Text details - Enhanced Contrast & Legibility */}
               <div className="flex-1 min-w-0">
-                <h3 className="font-serif font-bold text-[13px] sm:text-[14px] text-[#4a1226] tracking-tight group-hover:text-[#7a1c3d] transition-colors leading-snug">
+                <h3 className="font-serif font-bold text-[13px] sm:text-[14px] text-[#3d0b1a] tracking-tight group-hover:text-[#6e1330] transition-colors leading-snug">
                   {reason.title}
                 </h3>
-                <p className="text-[11px] sm:text-[11.5px] text-neutral-700 font-sans leading-snug line-clamp-2 mt-0.5 font-normal">
+                <p className="text-[11px] sm:text-[11.5px] text-neutral-800 font-sans leading-snug line-clamp-2 mt-0.5 font-medium">
                   {reason.description}
                 </p>
               </div>
@@ -217,7 +217,7 @@ export const Chapter08Special: React.FC<ChapterProps> = ({ onNext }) => {
         onClick={onNext}
         className="relative z-20 w-full flex flex-col items-center pb-4 cursor-pointer opacity-90 hover:opacity-100 transition-opacity select-none"
       >
-        <ChevronDown className="w-5 h-5 text-pink-400 animate-bounce" />
+        <ChevronDown className="w-5 h-5 text-pink-200 animate-bounce" />
       </div>
     </section>
   );

@@ -47,7 +47,7 @@ export const Chapter03Envelope: React.FC<ChapterProps> = ({ onOpenLetter }) => {
 
     const tl = gsap.timeline({
       onComplete: () => {
-        setTimeout(() => onOpenLetter(), 500);
+        setTimeout(() => onOpenLetter(), 750);
       },
     });
 
@@ -209,10 +209,10 @@ export const Chapter03Envelope: React.FC<ChapterProps> = ({ onOpenLetter }) => {
 
             {/* Letter Sneak Peek Text */}
             <div className="space-y-1.5 my-1">
-              <p className="font-serif italic text-[11.5px] text-neutral-800 leading-relaxed font-medium">
+              <p className="font-serif italic text-[11.5px] text-neutral-900 leading-relaxed font-semibold">
                 "To my lazy sister, duniya jaye bhad me un sab ki MKC, Din bhar mobile chalao reels dekho..."
               </p>
-              <p className="font-serif italic text-[11px] text-neutral-700 leading-snug line-clamp-2">
+              <p className="font-serif italic text-[11px] text-neutral-800 leading-snug line-clamp-2 font-medium">
                 Log bolein din bhar mobile chalati fir bhi ye achieve kar liya! Aur padhai ki tension mat lena 😂
               </p>
             </div>

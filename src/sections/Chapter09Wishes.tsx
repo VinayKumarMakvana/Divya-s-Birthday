@@ -115,9 +115,9 @@ export const Chapter09Wishes: React.FC<ChapterProps> = ({ onNext }) => {
           {/* Active Warm Glowing Parchment Note Inside Jar with 3D Card Flip */}
           <div
             ref={wishTextRef}
-            className="relative z-20 w-[180px] sm:w-[195px] rounded-xl bg-gradient-to-br from-[#fffdf7]/96 via-[#fef8ea]/95 to-[#fcf0d5]/95 p-3 text-center shadow-[0_0_25px_rgba(255,216,117,0.75),0_6px_20px_rgba(0,0,0,0.6)] border border-amber-300/85 preserve-3d"
+            className="relative z-20 w-[195px] sm:w-[220px] rounded-xl bg-gradient-to-br from-[#fffdf7]/98 via-[#fef8ea]/95 to-[#fcf0d5]/95 p-3.5 text-center shadow-[0_0_25px_rgba(255,216,117,0.75),0_6px_20px_rgba(0,0,0,0.6)] border-2 border-amber-300/90 preserve-3d"
           >
-            <p className="font-serif italic text-xs sm:text-[13px] text-[#5c1328] font-semibold leading-relaxed">
+            <p className="font-serif italic text-[12.5px] sm:text-sm text-[#4a0d1e] font-bold leading-relaxed">
               "{wishes[wishIndex]}"
             </p>
           </div>
@@ -158,7 +158,7 @@ export const Chapter09Wishes: React.FC<ChapterProps> = ({ onNext }) => {
         onClick={onNext}
         className="relative z-20 flex flex-col items-center pb-4 cursor-pointer opacity-90 hover:opacity-100 transition-opacity select-none text-center"
       >
-        <p className="font-serif italic text-xs text-pink-200/80 tracking-wide mb-1.5">
+        <p className="font-serif italic text-xs sm:text-sm text-pink-100 font-medium tracking-wide mb-1.5 drop-shadow-[0_1px_5px_rgba(0,0,0,0.9)]">
           Tap the jar or arrows to reveal more wishes ♡
         </p>
         <ChevronDown className="w-5 h-5 text-pink-200 animate-bounce" />
