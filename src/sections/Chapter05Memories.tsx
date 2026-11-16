@@ -217,7 +217,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
           </div>
 
           <div className="mt-1.5 text-center">
-            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Sweet childhood ♡</span>
+            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Celebrations ♡</span>
           </div>
         </div>
 
@@ -267,7 +267,7 @@ export const Chapter05Memories: React.FC<ChapterProps> = ({ onNext }) => {
           </div>
 
           <div className="mt-1.5 text-center">
-            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Endless smiles ✨</span>
+            <span className="font-script text-xs text-neutral-800 font-bold block drop-shadow-xs">Golden memories ♡</span>
           </div>
         </div>
 
